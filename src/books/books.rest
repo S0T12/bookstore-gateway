@@ -1,0 +1,46 @@
+### Create a new book
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+  "title": "hello",
+  "author": "world",
+  "genre": "dev",
+  "yearOfPublication": 2024,
+  "price": 99
+}
+
+### Get all books
+GET http://localhost:3000/books
+
+### Get a book by ID
+GET http://localhost:3000/books/65e924bc8e7dafde63ab8258
+
+### Update a book by ID
+PUT http://localhost:3000/books/65e8bbbc22de1020611ac580
+Content-Type: application/json
+
+{
+  "title": "Updated Book Title"
+}
+
+### Delete a book by ID
+DELETE http://localhost:3000/books/65e9248b8e7dafde63ab824c
+
+### Find books by title
+GET http://localhost:3000/books/title/Updated%20Book%20Title
+
+### Find books by author
+GET http://localhost:3000/books/author/John%20Doe
+
+### Find books by genre
+GET http://localhost:3000/books/genre/Fiction
+
+### Find books by year of publication
+GET http://localhost:3000/books/year/2023
+
+### Search for books (by title, author, genre, or year of publication)
+GET http://localhost:3000/books/search/Fiction
+
+### Get popular books
+GET http://localhost:3000/books/findPopular/popular

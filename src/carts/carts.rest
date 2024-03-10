@@ -1,0 +1,26 @@
+### Add a book to the cart
+POST http://localhost:3000/cart/65e8ad408a15bdf5927d8e25/add
+Content-Type: application/json
+
+{
+  "bookId": "65ecbf36d760273059d5d346",
+  "userId": "65ecbf68bb341e99160f6dfd",
+  "quantity": 4
+}
+
+### Get Cart By userId
+GET http://localhost:3000/cart/getCart/65ecbf68bb341e99160f6dfd
+Content-Type: application/json
+
+{}
+
+### Remove a book from the cart
+DELETE http://localhost:3000/cart/65ecbf68bb341e99160f6dfd/remove
+Content-Type: application/json
+
+{
+  "bookId": "65ecbf36d760273059d5d346"
+}
+
+### Clear the cart
+DELETE http://localhost:3000/cart/65ecbf68bb341e99160f6dfd/clear

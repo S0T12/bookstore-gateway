@@ -1,0 +1,24 @@
+### Create a new purchase
+POST http://localhost:3000/purchase
+Content-Type: application/json
+
+{
+  "userId": "65ecbf68bb341e99160f6dfd"
+}
+
+### Get a purchase by ID
+GET http://localhost:3000/purchase/65ee22d313b048a52f074951
+
+### Update a purchase
+PATCH http://localhost:3000/purchase/65e8ad408a15bdf5927d8e25
+Content-Type: application/json
+
+{
+  "status": "completed"
+}
+
+### Get purchases by userId
+GET http://localhost:3000/purchase/user/65ecbf68bb341e99160f6dfd
+
+### Delete a purchase by ID
+DELETE http://localhost:3000/purchase/65ecd7141fa62adc4f6c3bdb

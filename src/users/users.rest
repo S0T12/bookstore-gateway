@@ -1,0 +1,30 @@
+### create
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "username": "user",
+  "email": "sample@example.com",
+  "password": "password"
+}
+
+### findAll
+GET http://localhost:3000/users
+Authorization: Bearer "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIiLCJzdWIiOiI2NWVlMWExY2U3NDMwNGEyODcxZDhkOTAiLCJpYXQiOjE3MTAxMDMwNjgsImV4cCI6MTcxMDEwNjY2OH0.erok85LAmdklSjzkTs-Soy7JKHTbwnaz7WLrOfQhUS8"
+
+### findById
+GET http://localhost:3000/users/65ee1ba5164641eb29a87b56
+Authorization: Bearer "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIiLCJzdWIiOiI2NWVlMWExY2U3NDMwNGEyODcxZDhkOTAiLCJpYXQiOjE3MTAxMDMwNjgsImV4cCI6MTcxMDEwNjY2OH0.erok85LAmdklSjzkTs-Soy7JKHTbwnaz7WLrOfQhUS8"
+
+### update
+PATCH http://localhost:3000/users/65e8ad408a15bdf5927d8e25
+Content-Type: application/json
+Authorization: Bearer "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIiLCJzdWIiOiI2NWVlMWExY2U3NDMwNGEyODcxZDhkOTAiLCJpYXQiOjE3MTAxMDMwNjgsImV4cCI6MTcxMDEwNjY2OH0.erok85LAmdklSjzkTs-Soy7JKHTbwnaz7WLrOfQhUS8"
+
+{
+  "username": "updated_username"
+}
+
+### remove
+DELETE http://localhost:3000/users/65e8b21fcf5dc97fc4d8f5a5
+Authorization: Bearer "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIiLCJzdWIiOiI2NWVlMWExY2U3NDMwNGEyODcxZDhkOTAiLCJpYXQiOjE3MTAxMDMwNjgsImV4cCI6MTcxMDEwNjY2OH0.erok85LAmdklSjzkTs-Soy7JKHTbwnaz7WLrOfQhUS8"
