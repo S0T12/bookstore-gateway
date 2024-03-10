@@ -8,7 +8,7 @@ To run the project, follow these steps:
 
 1. **Clone the Repository**: 
    ```
-   git clone <repository-url>
+   git clone https://github.com/S0T12/bookstore-gateway.git
    ```
 
 2. **Install Dependencies**:
